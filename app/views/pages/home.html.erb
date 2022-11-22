@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner-homepage" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path "homepage-banner.jpg" %>);">
+  <div class="container">
+    <h1>Le couteau</h1>
+    <p>Discover the <strong>best restaurants</strong> in town.</p>
+    <%= link_to("See our restaurants", restaurants_path, { class: "btn btn-primary" }) %>
+  </div>
+</div>
+
+<div class="homepage-container">
+  <h1>Top 5 restaurants</h1>
+  <p>TODO: display top 5 restaurants</p>
+</div>
