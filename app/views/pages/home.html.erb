@@ -1,2 +1,7 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path "banner.jpg" %>);">
+  <div class="container">
+    <h1>Restaurants in Tokyo</h1>
+    <p>Curated list of restaurants loved by batch 1388</p>
+    <%= link_to "Discover restaurants", restaurants_path, class: "btn btn-primary" %>
+  </div>
+</div>
